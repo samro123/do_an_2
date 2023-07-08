@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+	<title>DeskApp - Bootstrap Admin Dashboard HTML Template</title>
+
+	
+	{{!-- <link rel="apple-touch-icon" sizes="180x180" href="/vendors/images/apple-touch-icon.png"> --}}
+    <link rel="apple-touch-icon" sizes="180x180" href="/vendors/images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/vendors/images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/vendors/images/favicon-16x16.png">
+    <!-- Mobile Specific Metas -->
+	<!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="/vendors/styles/core.css">
+	<link rel="stylesheet" type="text/css" href="/vendors/styles/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="/vendors/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="/plugins/datatables/css/dataTables.bootstrap4.min.css">
+	<link rel="stylesheet" type="text/css" href="/plugins/datatables/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="/plugins/dropzone/src/dropzone.css">
+	{{!-- <link rel="stylesheet" href="/shop/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/shop/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="/shop/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="/shop/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="/shop/css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="/shop/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="/shop/css/slicknav.min.css" type="text/css"> --}}
+    {{!-- <link rel="stylesheet" href="/shop/css/owl.carousel.min.css" type="text/css"> --}}
+    <link rel="stylesheet" href="/shop/css/style.css" type="text/css">
+	
+
+    {{!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/vendor/open-iconic-master/font/css/open-iconic-bootstrap.css"> --}}
+    <link rel="stylesheet" href="/css/app.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119386393-1"></script>
+    <script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-119386393-1');
+	</script>
+</head>
+<body>
+    <div class="app">
+        
+        {{> header }}
+
+       <div class="container">
+            {{{body}}}
+       </div>
+
+        {{> footer }}
+    </div>
+<script src="/vendors/scripts/core.js"></script>
+	<script src="/vendors/scripts/script.min.js"></script>
+	<script src="/vendors/scripts/process.js"></script>
+	<script src="/vendors/scripts/layout-settings.js"></script>
+  
+    <script src="/plugins/apexcharts/apexcharts.min.js"></script>
+	<script src="/plugins/datatables/js/jquery.dataTables.min.js"></script>
+	<script src="/plugins/datatables/js/dataTables.bootstrap4.min.js"></script>
+	<script src="/plugins/datatables/js/dataTables.responsive.min.js"></script>
+	<script src="/plugins/datatables/js/responsive.bootstrap4.min.js"></script>
+	  <script src="/vendors/scripts/dashboard.js"></script>
+{{!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> --}}
+<script src="/plugins/dropzone/src/dropzone.js"></script>
+  {{!-- <script src="/shop/js/jquery-3.3.1.min.js"></script>
+    <script src="/shop/js/bootstrap.min.js"></script>
+    <script src="/shop/js/jquery.nice-select.min.js"></script>
+    <script src="/shop/js/jquery-ui.min.js"></script>
+    <script src="/shop/js/jquery.slicknav.js"></script>
+    <script src="/shop/js/mixitup.min.js"></script>
+    <script src="/shop/js/owl.carousel.min.js"></script> --}}
+    {{!-- <script src="/shop/js/owl.carousel.min.js"></script>
+    <script src="/shop/js/main.js"></script> --}}
+	<script>
+		Dropzone.autoDiscover = false;
+		$(".dropzone").dropzone({
+			addRemoveLinks: true,
+			removedfile: function(file) {
+				var name = file.name;
+				var _ref;
+				return (_ref = file.previewElement) != null ? _ref.parentNode.removeChild(file.previewElement) : void 0;
+			}
+		});
+	</script>
+</body>
+</html>
